@@ -1,5 +1,6 @@
 body {
-    background-color: aquamarine;
+    background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2017-12/6/13/asset/buzzfeed-prod-fastlane-02/anigif_sub-buzz-20276-1512586655-1.gif");
+    background-size: 220vh 600px;
     font-family: Arial;
     height: 100vh;
 } 
