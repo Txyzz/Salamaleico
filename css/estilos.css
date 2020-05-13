@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Roboto', sans-serif; */
+
 body {
     background-image: url("https://i.pinimg.com/originals/11/1a/03/111a03133d14214539c96e0f657dff1a.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     font-size: 10px;
 }
@@ -24,6 +28,25 @@ body {
 @media (min-width: 600px) {
   body {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  section .grid {
+    grid-template-columns: repeat(2, 240px);
+    text-align: center;
+  }
+}
+
+@media (min-width: 880px) {
+  section .grid {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media (min-width: 1230px) {
+  section .grid {
+    grid-template-columns: repeat(4, 240px);
   }
 }
 
@@ -44,6 +67,27 @@ h1 {
     font-weight: bold;
 }
 
+section {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.4em;
+  color: #1E90FF;
+  padding: 2em;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+section .grid {
+  display: grid;
+  gap: 2em;
+}
+
+section figure {
+  text-align: center;
+}
+
 .menu {
     background-color: #4169E1;  
     position: fixed;
@@ -61,7 +105,7 @@ background-color:	#1E90FF;
 }
 
 a {
-    color: #000000;
+    color: #66CDAA;
     text-decoration: none;
 }
 
@@ -81,16 +125,24 @@ a:hover {
 .site-title {
   color: #4169E1;
   text-align: center;
-  font-size: 4em;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3.5em;
 }
 
 .site-subtitle {
   font-style: italic;
-  color:#4169E1;
+  font-family: 'Amatic SC', cursive;
+  color: #4169E1;
   text-align: center
 }
 
+
 .img-portfolio {
-  width: 180px;
+  width: 250px;
   height: 180px;
+  object-fit: cover;
+  border-radius: 100px;
 }
+
+
+
