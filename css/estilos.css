@@ -50,11 +50,43 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+  section .grid_icons {
+    grid-template-columns: repeat(2, 240px);
+    text-align: center;
+  }
+}
+
+@media (min-width: 880px) {
+  section .grid_icons {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media (min-width: 1230px) {
+  section .grid_icons {
+    grid-template-columns: repeat(4, 240px);
+  }
+}
+
 header {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.titulo {
+  transform: scale(0.2) translateY(30vh);
+  opacity: 0;
+  animation: linear .5s Atitulo forwards;
+}
+
+@keyframes Atitulo {
+  100% {
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+  }
 }
 
 head {
@@ -82,10 +114,21 @@ section h2 {
 section .grid {
   display: grid;
   gap: 2em;
+  color: whitesmoke;
 }
 
 section figure {
   text-align: center;
+}
+
+section .grid_icons {
+  display: grid;
+  gap: 2em;
+}
+
+.grid_icons i {
+  color: #6A5ACD;
+  font-size: 1.5em;
 }
 
 .menu {
@@ -98,23 +141,22 @@ section figure {
 .menu a {
   display: block;
   padding: 10px 20px;
+  text-decoration: none;
+  color: #5baaeb;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .menu a:hover {
-background-color:	#1E90FF;
+background-color:	#5baaeb;
+color: #4169E1;
 }
 
-a {
-    color: #66CDAA;
-    text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.a {
+  color: #66CDAA;
 }
 
 .menu li {
-    list-style: none
+  list-style: none
 }
 
 .menu ul {
@@ -133,15 +175,41 @@ a:hover {
   font-style: italic;
   font-family: 'Amatic SC', cursive;
   color: #4169E1;
-  text-align: center
+  text-align: center;
 }
 
+.sub {
+  font-style: italic;
+  font-family: 'Amatic SC', cursive;
+  color: #4169E1;
+  text-align: center;
+  font-size: 1.5em;
+}
 
 .img-portfolio {
-  width: 250px;
-  height: 180px;
+  width: 220px;
+  height: 150px;
   object-fit: cover;
   border-radius: 100px;
+  transition: transform 0.2s;
+
+}
+
+.img-portfolio:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.grid_icons a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: text-shadow 0.2s;
+ 
+}
+
+.contato a:active,
+.contato a:hover {
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
+
 }
 
 
