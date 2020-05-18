@@ -32,25 +32,7 @@ body {
 }
 
 @media (min-width: 600px) {
-  section .grid {
-    grid-template-columns: repeat(2, 240px);
-    text-align: center;
-  }
-}
-
-@media (min-width: 880px) {
-  section .grid {
-    grid-template-columns: repeat(3, 240px);
-  }
-}
-
-@media (min-width: 1230px) {
-  section .grid {
-    grid-template-columns: repeat(4, 240px);
-  }
-}
-
-@media (min-width: 600px) {
+  section .grid,
   section .grid_icons {
     grid-template-columns: repeat(2, 240px);
     text-align: center;
@@ -58,14 +40,27 @@ body {
 }
 
 @media (min-width: 880px) {
+  section .grid,
   section .grid_icons {
     grid-template-columns: repeat(3, 240px);
   }
 }
 
 @media (min-width: 1230px) {
+  section .grid,
   section .grid_icons {
     grid-template-columns: repeat(4, 240px);
+  }
+}
+
+@media (min-width: 1230px) {
+  .sobre,
+  .contato,
+  .grid,
+  section {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -210,6 +205,28 @@ color: #4169E1;
 .contato a:hover {
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.8);
 
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+}
+
+.sobre .avatar img {
+  clip-path: polygon(25% 0%, 90% 0, 90% 100%, 25% 100%, 0% 50%);
+}
+
+.sobre div {
+  color: #4169E1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  text-indent: 1.2em; 
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.im {
+  color: whitesmoke;
 }
 
 
